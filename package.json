@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch ./src/index.ts"
+    "dev": "bun run --watch ./src/index.tsx"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.6.0",
@@ -13,9 +13,12 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.3",
+    "typed-html": "^3.0.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "elysia": "^0.6.19"
+    "@elysiajs/html": "^0.6.4",
+    "elysia": "^0.6.19",
+    "twind": "^0.16.19"
   }
 }
