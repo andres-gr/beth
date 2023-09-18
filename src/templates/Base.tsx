@@ -10,7 +10,7 @@ const Base = ({ children }: Html.PropsWithChildren) => (
       />
       <script src="https://unpkg.com/htmx.org@1.9.5" />
       <link
-        href="public/styles/index.css"
+        href="public/vanilla-styles/index.css"
         rel="stylesheet"
       />
       <title>The BETH Stack</title>

@@ -26,3 +26,6 @@ dist-ssr
 .eslint*
 *.config.ts
 *.config.js
+
+# Vanilla compiled styles
+public/vanilla-styles/*

@@ -6,7 +6,7 @@ export default defineConfig(options => ({
   dts: false,
   entry: ['src/styles/index.ts'],
   format: 'cjs',
-  outDir: 'public/styles',
+  outDir: 'public/vanilla-styles',
   sourcemap: true,
   splitting: false,
   esbuildPlugins: [

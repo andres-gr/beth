@@ -19,8 +19,8 @@
       "@/*": ["src/*"],
       "@/styles/*": ["src/styles/*"],
       "@/templates/*": ["src/templates/*"],
-      "~/css": ["public/styles/index.css"],
-      "~/styles": ["public/styles/index.cjs"]
+      "~/css": ["public/vanilla-styles/index.css"],
+      "~/styles": ["public/vanilla-styles/index.cjs"]
     },
     "plugins": [
       {
@@ -37,6 +37,6 @@
   "include": [
     "./src/**/*.ts",
     "./src/**/*.tsx",
-    "./public/styles/*.cjs"
+    "./public/vanilla-styles/*.cjs"
   ]
 }
