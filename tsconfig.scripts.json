@@ -7,26 +7,12 @@
     "composite": true,
     "downlevelIteration": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
-    "jsxFactory": "Html.createElement",
-    "jsxFragmentFactory": "Html.Fragment",
+    "jsx": "preserve",
     "lib": ["ESNext"],
     "module": "ESNext",
     "moduleDetection": "force",
     "moduleResolution": "Bundler",
     "noEmit": true,
-    "paths": {
-      "@/*": ["src/*"],
-      "@/styles/*": ["src/styles/*"],
-      "@/templates/*": ["src/templates/*"],
-      "~/css": ["public/styles/index.css"],
-      "~/styles": ["public/styles/index.cjs"]
-    },
-    "plugins": [
-      {
-        "name": "@kitajs/ts-html-plugin"
-      }
-    ],
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
@@ -35,8 +21,8 @@
     ]
   },
   "include": [
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-    "./public/styles/*.cjs"
+    "./scripts/**/*.ts",
+    "./scripts/**/*.tsx"
   ]
 }
+

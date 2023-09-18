@@ -1,29 +1,25 @@
-import * as elements from 'typed-html'
-import html from '@elysiajs/html'
 import { Elysia } from 'elysia'
-import { tw } from 'twind'
+import { html } from '@elysiajs/html'
+import { staticPlugin } from '@elysiajs/static'
 
 import Base from '@/templates/Base'
+import { BaseStyles, BtnStyles, SpanStyles } from '~/styles'
 
 const PORT = 3000
 
 const ely = new Elysia()
-const app = ely.use(html())
-
-const S = {
-  body: tw`flex flex-col w-full h-screen justify-center items-center`,
-  span: tw`text-blue-600`,
-}
+const app = ely.use(html()).use(staticPlugin())
 
 app.get('/', ({ html }) =>
   html(
     <Base>
-      <body class={S.body}>
+      <body class={BaseStyles}>
         <button
+          class={BtnStyles}
           hx-post="/clicked"
           hx-swap="outerHTML"
         >
-          Helo, Click Me
+          helo, Click Me
         </button>
       </body>
     </Base>
@@ -32,7 +28,7 @@ app.get('/', ({ html }) =>
 
 app.post('/clicked', () => (
   <div>
-    <span class={S.span}>from beyond the server</span>
+    <span class={SpanStyles}>from beyond the server</span>
   </div>
 ))
 
